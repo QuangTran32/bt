@@ -1,0 +1,25 @@
+/* Phông chữ chung cho toàn trang */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden; /* Tránh lỗi thanh cuộn ngang khi chạy animation */
+}
+
+/* Định dạng Chatbox */
+#chatbox {
+    z-index: 9999; /* Đảm bảo luôn nằm trên cùng, sửa lỗi bị che khuất trong ảnh của bạn */
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hiệu ứng mượt cho các thẻ nội dung */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* Khoảng đệm phía dưới trang để không bị Chatbox che mất nội dung cuối */
+section {
+    padding-bottom: 100px;
+}
